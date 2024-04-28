@@ -39,7 +39,12 @@ const Index = () => {
         <Box>
           <Text mb={2}>새 회원 추가:</Text>
           <Stack direction="row" spacing={2}>
-            <Input placeholder="회원 이름" value={newMemberName} onChange={(e) => setNewMemberName(e.target.value)} />
+            <select value={newMemberName} onChange={(e) => setNewMemberName(e.target.value)}>
+              <option value="">Select a name</option>
+              <option value="Alice">Alice</option>
+              <option value="Bob">Bob</option>
+              <option value="Charlie">Charlie</option>
+            </select>
             <NumberInput min={1} value={newMemberMonths} onChange={(valueAsString, valueAsNumber) => setNewMemberMonths(valueAsNumber)}>
               <NumberInputField placeholder="개월 수" />
             </NumberInput>
