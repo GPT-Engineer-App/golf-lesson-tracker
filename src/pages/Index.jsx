@@ -35,7 +35,9 @@ const Index = () => {
   return (
     <Container maxW="container.md" py={5}>
       <VStack spacing={4} align="stretch">
-        <Heading size="lg">골프 레슨 관리 앱</Heading>
+        <Heading size="lg" style={{ textAlign: "center", color: "teal" }}>
+          골프 레슨 관리
+        </Heading>
         <Box>
           <Text mb={2}>새 회원 추가:</Text>
           <Stack direction="row" spacing={2}>
